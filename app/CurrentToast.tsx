@@ -28,7 +28,7 @@ export function CurrentToast() {
   )
 }
 
-export function ToastControl() {
+export default function ToastControl() {
   const toast = useToastController()
 
   return (
