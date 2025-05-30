@@ -8522,6 +8522,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-blur@npm:^14.1.4":
+  version: 14.1.4
+  resolution: "expo-blur@npm:14.1.4"
+  peerDependencies:
+    expo: "*"
+    react: "*"
+    react-native: "*"
+  checksum: 10/62a405ca66a1e42bc76b19eea57d79ec6e6669b359ae3dbebb8219230b2e0afd08d732a8efe9ec05b22f909a8f0c89ed13d0e694d8802f39ee63226d42ab77d9
+  languageName: node
+  linkType: hard
+
 "expo-build-properties@npm:~0.14.6":
   version: 0.14.6
   resolution: "expo-build-properties@npm:0.14.6"
@@ -8576,6 +8587,17 @@ __metadata:
     expo: "*"
     react: "*"
   checksum: 10/d90781fa940f2cac235608e87f52ab4922bf3b3be0b827dc17a2e33a93daad5471445abbe338f76e38561cec2841cbf50e5b78183a0c4819d2462e81e40c6f69
+  languageName: node
+  linkType: hard
+
+"expo-linear-gradient@npm:^14.1.4":
+  version: 14.1.4
+  resolution: "expo-linear-gradient@npm:14.1.4"
+  peerDependencies:
+    expo: "*"
+    react: "*"
+    react-native: "*"
+  checksum: 10/a76c479d3ecbe00d653e6128d3e9ab0eb9688e213354299b3748a13fa3383eae8fd8ccaa85bf8232309bb64c9a24700c6a3451775f4c8a39e22b29c5b38a378b
   languageName: node
   linkType: hard
 
@@ -12601,6 +12623,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-navigation-bar-color@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "react-native-navigation-bar-color@npm:2.0.2"
+  checksum: 10/752095e0225c16cdce5882a886c1f075ebf8998066fec1976d8610c144606e78dc20a7339fcda14caa98a4a4f77b583274781b53f3f1a0d49165af21e0f807a5
+  languageName: node
+  linkType: hard
+
 "react-native-reanimated@npm:~3.17.4":
   version: 3.17.5
   resolution: "react-native-reanimated@npm:3.17.5"
@@ -13796,8 +13825,10 @@ __metadata:
     babel-preset-expo: "npm:~13.0.0"
     burnt: "npm:^0.12.2"
     expo: "npm:53.0.7"
+    expo-blur: "npm:^14.1.4"
     expo-build-properties: "npm:~0.14.6"
     expo-font: "npm:~13.3.1"
+    expo-linear-gradient: "npm:^14.1.4"
     expo-linking: "npm:~7.1.4"
     expo-router: "npm:~5.0.5"
     expo-splash-screen: "npm:~0.30.8"
@@ -13807,6 +13838,7 @@ __metadata:
     react: "npm:19.0.0"
     react-dom: "npm:19.0.0"
     react-native: "npm:0.79.2"
+    react-native-navigation-bar-color: "npm:^2.0.2"
     react-native-reanimated: "npm:~3.17.4"
     react-native-safe-area-context: "npm:5.4.0"
     react-native-screens: "npm:~4.10.0"

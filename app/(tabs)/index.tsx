@@ -5,8 +5,20 @@ export default function TabOneScreen() {
   const router = useRouter();
 
   return (
-    <YStack flex={1} bg={"#fff"} items="center" gap="$8" px="$10" pt="$8">
-      <Text fontSize={22}> Welcome to splitrix</Text>
+    <YStack
+      flex={1}
+      bg={"#1e1e1e"}
+      items="center"
+      borderWidth={2}
+      borderColor={"red"}
+      mb={0}
+    >
+      <Text fontSize={30}>WELCOME TO SPLITRIX</Text>
+      <Button onPress={() => router.push("/login")}>Login</Button>
+      <Button onPress={() => router.push("/login")}>Login</Button>
+
+      <Button onPress={() => router.push("/login")}>Login</Button>
+      <Button onPress={() => router.push("/login")}>Login</Button>
       <Button onPress={() => router.push("/login")}>Login</Button>
     </YStack>
   );

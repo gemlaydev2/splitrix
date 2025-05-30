@@ -1,23 +1,27 @@
 import { Link, Tabs } from "expo-router";
 import { Button, useTheme } from "tamagui";
-import { Atom, AudioWaveform } from "@tamagui/lucide-icons";
+import {
+  Atom,
+  AudioWaveform,
+  Contact,
+  Home,
+  Image,
+  User,
+} from "@tamagui/lucide-icons";
+import CustomTabBar from "components/CustomTabBar";
 
 export default function TabLayout() {
   const theme = useTheme();
 
   return (
     <Tabs
+      tabBar={(props) => <CustomTabBar {...props} />}
       screenOptions={{
         tabBarActiveTintColor: theme.red10.val,
         tabBarStyle: {
           backgroundColor: theme.background.val,
           borderTopColor: theme.borderColor.val,
         },
-        headerStyle: {
-          backgroundColor: theme.background.val,
-          borderBottomColor: theme.borderColor.val,
-        },
-        headerTintColor: theme.color.val,
       }}
     >
       <Tabs.Screen
@@ -25,22 +29,27 @@ export default function TabLayout() {
         options={{
           headerShown: false,
           title: "Home",
-          tabBarIcon: ({ color }) => <Atom color={color as any} />,
-          headerRight: () => (
-            <Link href="/modal" asChild>
-              <Button mr="$4" bg="$green8" color="$green12">
-                Hello!
-              </Button>
-            </Link>
-          ),
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="friends"
+        options={{
+          headerShown: false,
+          title: "Friends",
+        }}
+      />
+      <Tabs.Screen
+        name="activity"
+        options={{
+          headerShown: false,
+          title: "Activity",
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
         options={{
           headerShown: false,
           title: "Profile",
-          tabBarIcon: ({ color }) => <AudioWaveform color={color as any} />,
         }}
       />
     </Tabs>
