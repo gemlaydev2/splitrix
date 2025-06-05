@@ -33,7 +33,7 @@ const CustomTabBar = ({ state, descriptors, navigation }) => {
         end={{ x: 1, y: 0.5 }}
         style={styles.shine}
       />
-      {state.routes.map((route, index) => {
+      {state.routes.map((route: any, index: any) => {
         if (["_sitemap", "+not-found"].includes(route.name)) return null;
 
         const { options } = descriptors[route.key];
@@ -151,6 +151,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 5 },
     shadowOpacity: 0.3,
     shadowRadius: 5,
+    backgroundColor:"#000000f1"
   },
   shine: {
     position: "absolute",
